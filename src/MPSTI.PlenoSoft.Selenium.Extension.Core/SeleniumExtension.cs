@@ -9,7 +9,7 @@ using System.Threading;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 
-namespace MPSC.PlenoSoft.Selenium.Extension
+namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public static class SeleniumExtension
 	{

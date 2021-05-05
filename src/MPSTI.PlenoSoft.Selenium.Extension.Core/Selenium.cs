@@ -8,7 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 
-namespace MPSC.PlenoSoft.Selenium.Extension
+namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public class SeleniumRWD
 	{
@@ -103,8 +103,6 @@ namespace MPSC.PlenoSoft.Selenium.Extension
 				?? searchContext.FindElements(By.CssSelector($"[name*='{idOrName}' i]")).Skip(skip).FirstOrDefault()
 			;
 		}
-
-
 
 
 

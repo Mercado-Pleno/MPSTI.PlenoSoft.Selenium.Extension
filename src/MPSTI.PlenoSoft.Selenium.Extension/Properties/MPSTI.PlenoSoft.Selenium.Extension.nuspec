@@ -39,6 +39,6 @@
         </frameworkAssemblies>
     </metadata>
     <files>
-        <file src=".\Bin\Debug\MPSTI.PlenoSoft.Selenium.Extension.dll" target="lib\net\" />
+        <file src="..\Bin\Debug\MPSTI.PlenoSoft.Selenium.Extension.dll" target="lib\net\" />
     </files>
 </package>

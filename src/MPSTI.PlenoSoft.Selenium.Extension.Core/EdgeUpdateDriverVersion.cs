@@ -1,4 +1,4 @@
-﻿namespace MPSC.PlenoSoft.Selenium.Extension
+﻿namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public class EdgeUpdateDriverVersion : BrowserUpdateDriverVersion
 	{

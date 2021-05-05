@@ -7,7 +7,7 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace MPSC.PlenoSoft.Selenium.Extension
+namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public enum BrowserType { Chrome, Edge, FireFox, }
 

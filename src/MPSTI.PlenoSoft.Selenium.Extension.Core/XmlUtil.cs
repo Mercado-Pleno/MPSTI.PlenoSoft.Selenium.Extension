@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace MPSC.PlenoSoft.Selenium.Extension
+namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public class XmlUtil
 	{
