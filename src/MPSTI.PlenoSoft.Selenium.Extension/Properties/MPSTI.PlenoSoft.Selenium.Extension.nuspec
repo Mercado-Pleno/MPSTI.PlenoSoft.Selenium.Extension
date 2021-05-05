@@ -6,7 +6,7 @@
         <title>PlenoSoft Selenium Extension @ Mercado Pleno Soluções em Computação</title>
         <authors>Bruno N. Fernandes</authors>
         <owners>software@mercadopleno.com.br</owners>
-        <licenseUrl>http://www.mercadopleno.com.br</licenseUrl>
+        <license>http://www.mercadopleno.com.br</license>
         <projectUrl>https://github.com/Bruno-N-Fernandes/MPSTI.PlenoSoft.Selenium.Extension</projectUrl>
         <iconUrl>http://www.mercadopleno.com.br/imgs/MPSC.PlenoSoft.Office.PlenoExcel.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,7 +18,8 @@
         <summary>O Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar. </summary>
         <releaseNotes>
 			(Atual)
-			2021/05/04 - 1.0.0.108 -> Versão Inicial do Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar;
+			2021/05/05 - 1.0.0.2 -> Ajuste do namespace das classes;
+			2021/05/04 - 1.0.0.1 -> Versão Inicial do Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar;
 		</releaseNotes>
         <copyright>Mercado Pleno Soluções em Computação</copyright>
         <language>pt-BR</language>
