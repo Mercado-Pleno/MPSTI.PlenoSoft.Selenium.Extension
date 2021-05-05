@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSTI.PlenoSoft.Selenium.Extension2", "MPSTI.PlenoSoft.Selenium.Extension2\MPSTI.PlenoSoft.Selenium.Extension2.csproj", "{15901997-BA9D-4395-A71D-6EB58B06DCD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSTI.PlenoSoft.Selenium.Extension", "MPSTI.PlenoSoft.Selenium.Extension2\MPSTI.PlenoSoft.Selenium.Extension.csproj", "{15901997-BA9D-4395-A71D-6EB58B06DCD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
