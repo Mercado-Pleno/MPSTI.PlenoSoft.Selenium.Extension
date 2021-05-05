@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="3.5.0">
+        <id>MPSTI.PlenoSoft.Selenium.Extension</id>
+        <version>$version$</version>
+        <title>PlenoSoft Selenium Extension @ Mercado Pleno Soluções em Computação</title>
+        <authors>Bruno N. Fernandes</authors>
+        <owners>software@mercadopleno.com.br</owners>
+        <licenseUrl>http://www.mercadopleno.com.br</licenseUrl>
+        <projectUrl>https://github.com/Bruno-N-Fernandes/MPSTI.PlenoSoft.Selenium.Extension</projectUrl>
+        <iconUrl>http://www.mercadopleno.com.br/imgs/MPSC.PlenoSoft.Office.PlenoExcel.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>O Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar. 
+<![CDATA[
+
+]]>
+		</description>
+        <summary>O Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar. </summary>
+        <releaseNotes>
+			(Atual)
+			2021/05/04 - 1.0.0.108 -> Versão Inicial do Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar;
+		</releaseNotes>
+        <copyright>Mercado Pleno Soluções em Computação</copyright>
+        <language>pt-BR</language>
+        <tags>Selenium WebDriver Test Teste Interface front frontEnd Pleno Soft</tags>
+        <dependencies>
+			<dependency id="HtmlAgilityPack" version="1.11.33"/>
+			<dependency id="Selenium.RC" version="3.1.0"/>
+			<dependency id="Selenium.Support" version="3.141.0"/>
+			<dependency id="Selenium.WebDriver" version="3.141.0"/>
+			<dependency id="Selenium.WebDriverBackedSelenium" version="3.141.0"/>
+			<dependency id="System.IO.Compression.ZipFile" version="4.3.0"/>
+		</dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Net.Http" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Xml" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src=".\Bin\Debug\MPSTI.PlenoSoft.Selenium.Extension.dll" target="lib\net\" />
+    </files>
+</package>

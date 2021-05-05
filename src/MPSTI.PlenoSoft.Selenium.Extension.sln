@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSTI.PlenoSoft.Selenium.Extension", "MPSTI.PlenoSoft.Selenium.Extension\MPSTI.PlenoSoft.Selenium.Extension.csproj", "{15901997-BA9D-4395-A71D-6EB58B06DCD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MPSTI.PlenoSoft.Selenium.ExtensionCore", "MPSTI.PlenoSoft.Selenium.Extension.Core\MPSTI.PlenoSoft.Selenium.ExtensionCore.csproj", "{95FACAC2-FCEA-4B7F-96D8-499684A167F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MPSTI.PlenoSoft.Selenium.Extension.Core", "MPSTI.PlenoSoft.Selenium.Extension.Core\MPSTI.PlenoSoft.Selenium.Extension.Core.csproj", "{95FACAC2-FCEA-4B7F-96D8-499684A167F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
