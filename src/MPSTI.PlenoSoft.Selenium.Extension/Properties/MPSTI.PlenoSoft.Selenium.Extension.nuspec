@@ -6,7 +6,7 @@
         <title>PlenoSoft Selenium Extension @ Mercado Pleno Soluções em Computação</title>
         <authors>Bruno N. Fernandes</authors>
         <owners>software@mercadopleno.com.br</owners>
-        <license>http://www.mercadopleno.com.br</license>
+		<licenseUrl>http://www.mercadopleno.com.br</licenseUrl>
         <projectUrl>https://github.com/Bruno-N-Fernandes/MPSTI.PlenoSoft.Selenium.Extension</projectUrl>
         <iconUrl>http://www.mercadopleno.com.br/imgs/MPSC.PlenoSoft.Office.PlenoExcel.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
