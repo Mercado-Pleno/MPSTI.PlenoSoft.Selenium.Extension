@@ -63,7 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrowserUpdateDriverVersion.cs" />
+    <Compile Include="ChromeUpdateDriverVersion.cs" />
+    <Compile Include="EdgeUpdateDriverVersion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selenium.cs" />
+    <Compile Include="SeleniumExtension.cs" />
+    <Compile Include="SeleniumFactory.cs" />
+    <Compile Include="XmlUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
