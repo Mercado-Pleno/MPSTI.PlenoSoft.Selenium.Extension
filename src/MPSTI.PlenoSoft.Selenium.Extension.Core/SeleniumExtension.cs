@@ -54,19 +54,25 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		public static Boolean ContainsAllText(this IWebElement webElement, Boolean caseSensitive, params String[] texts)
 		{
-			var webElementText = caseSensitive ? webElement.Text : webElement.Text.ToUpper();
+			var webElementText = caseSensitive ? webElement.TryGetText() : webElement.TryGetText().ToUpper();
 			return (texts.Length > 0) && texts.Select(t => caseSensitive ? t : t.ToUpper()).All(t => webElementText.Contains(t));
 		}
 
 		public static Boolean ContainsAnyText(this IWebElement webElement, Boolean caseSensitive, params String[] texts)
 		{
-			var webElementText = caseSensitive ? webElement.Text : webElement.Text.ToUpper();
+			var webElementText = caseSensitive ? webElement.TryGetText() : webElement.TryGetText().ToUpper();
 			return (texts.Length == 0) || texts.Select(t => caseSensitive ? t : t.ToUpper()).Any(t => webElementText.Contains(t));
 		}
 
 		public static Boolean EstaPreenchido(this IWebDriver webElement, string idOrName, string value)
 		{
-			return webElement.GetElementByIdOrName(idOrName)?.Text == value;
+			return webElement.GetElementByIdOrName(idOrName)?.TryGetText() == value;
+		}
+
+		public static string TryGetText(this IWebElement webElement)
+		{
+			try { return webElement.Text; }
+			catch { return ""; }
 		}
 
 

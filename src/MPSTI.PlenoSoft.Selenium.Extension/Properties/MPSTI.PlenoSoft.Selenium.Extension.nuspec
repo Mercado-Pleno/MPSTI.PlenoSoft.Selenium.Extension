@@ -18,6 +18,8 @@
         <summary>O Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar. </summary>
         <releaseNotes>
 			(Atual)
+			2021/06/29 - 1.0.0.4 -> Ajustes no versionamento;
+			2021/06/29 - 1.0.0.3 -> Tratamento de erro no reload das páginas;
 			2021/05/05 - 1.0.0.2 -> Ajuste do namespace das classes;
 			2021/05/04 - 1.0.0.1 -> Versão Inicial do Selenium.Extension é um conjunto de ferramentas que facilita o uso do Selenium muito simples de utilizar;
 		</releaseNotes>
