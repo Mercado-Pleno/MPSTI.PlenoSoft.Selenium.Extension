@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>1.0.0.4</Version>
+    <Version>1.0.0.5</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>(Atual)
+2021/06/29 - 1.0.0.5 -&gt; Expondo o RemoteWebDriver para acessar o Alert;
 2021/06/29 - 1.0.0.4 -&gt; Ajustes no versionamento;
 2021/06/29 - 1.0.0.3 -&gt; Tratamento de erro no reload das páginas;
 2021/05/05 - 1.0.0.2 -&gt; Ajuste do namespace das classes;

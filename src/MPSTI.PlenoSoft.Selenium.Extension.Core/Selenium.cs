@@ -12,18 +12,19 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 {
 	public class SeleniumRWD
 	{
-		private readonly RemoteWebDriver _remoteWebDriver;
+		public RemoteWebDriver RemoteWebDriver { get; }
+
 
 		public SeleniumRWD(RemoteWebDriver remoteWebDriver)
 		{
-			_remoteWebDriver = remoteWebDriver;
+			RemoteWebDriver = remoteWebDriver;
 		}
 
-		public string Source => _remoteWebDriver.PageSource;
+		public string Source => RemoteWebDriver.PageSource;
 
 		public bool IsEmptyPageSource => Source == "<html><head></head><body></body></html>";
 
-		public IWebElement GetByIdOrName(string idOrName, int skip = 0) => GetElementByIdOrName(_remoteWebDriver, idOrName, skip);
+		public IWebElement GetByIdOrName(string idOrName, int skip = 0) => GetElementByIdOrName(RemoteWebDriver, idOrName, skip);
 
 
 		public IWebElement Set(string idOrName, Boolean click)
@@ -106,6 +107,7 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 
 
+		public void Alert(Action<IAlert> action) => action?.Invoke(RemoteWebDriver.SwitchTo().Alert());
 
 
 
@@ -131,22 +133,22 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		public Boolean WaitUntilContainsAllText(CancellationToken cancellationToken, Boolean caseSensitive, params String[] texts)
 		{
-			return _remoteWebDriver.GetBody().WaitUntilContainsAllText(cancellationToken, caseSensitive, texts);
+			return RemoteWebDriver.GetBody().WaitUntilContainsAllText(cancellationToken, caseSensitive, texts);
 		}
 
 		public Boolean WaitWhileContainsAllText(CancellationToken cancellationToken, Boolean caseSensitive, params String[] texts)
 		{
-			return _remoteWebDriver.GetBody().WaitWhileContainsAllText(cancellationToken, caseSensitive, texts);
+			return RemoteWebDriver.GetBody().WaitWhileContainsAllText(cancellationToken, caseSensitive, texts);
 		}
 
 		public Boolean ContainsAllText(Boolean caseSensitive, params String[] texts)
 		{
-			return _remoteWebDriver.GetBody().ContainsAllText(caseSensitive, texts);
+			return RemoteWebDriver.GetBody().ContainsAllText(caseSensitive, texts);
 		}
 
 		public Boolean ContainsAnyText(Boolean caseSensitive, params String[] texts)
 		{
-			return _remoteWebDriver.GetBody().ContainsAnyText(caseSensitive, texts);
+			return RemoteWebDriver.GetBody().ContainsAnyText(caseSensitive, texts);
 		}
 
 		public Boolean WaitUntilContainsAllText(IWebElement webElement, CancellationToken cancellationToken, Boolean caseSensitive, params String[] texts)
@@ -180,7 +182,7 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		public Boolean EstaPreenchido(string idOrName, string value)
 		{
-			var element = _remoteWebDriver.GetElementByIdOrName(idOrName);
+			var element = RemoteWebDriver.GetElementByIdOrName(idOrName);
 			return element?.GetAttribute("value") == value;
 		}
 
@@ -212,7 +214,7 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		public IWebElement GetBody(IWebDriver webDriver = null)
 		{
-			return (webDriver ?? _remoteWebDriver).GetElement("body", 0);
+			return (webDriver ?? RemoteWebDriver).GetElement("body", 0);
 		}
 
 		public IWebElement GetElement(ISearchContext searchContext, String tagName, Int32 skip = 0)
@@ -220,9 +222,9 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 			return searchContext.FindElements(By.TagName(tagName)).Skip(skip).FirstOrDefault();
 		}
 
-		public IWebElement GetButton( string text)
+		public IWebElement GetButton(string text)
 		{
-			return GetButton(_remoteWebDriver, text);
+			return GetButton(RemoteWebDriver, text);
 		}
 
 		public IWebElement GetButton(IFindsByCssSelector searchContext, string text)
@@ -242,9 +244,9 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 		{
 			try
 			{
-				_remoteWebDriver.Close();
-				_remoteWebDriver.Quit();
-				_remoteWebDriver.Dispose();
+				RemoteWebDriver.Close();
+				RemoteWebDriver.Quit();
+				RemoteWebDriver.Dispose();
 			}
 			catch (Exception) { }
 		}
@@ -256,7 +258,7 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		public void IrParaEndereco(string address, int timeout = 0)
 		{
-			_remoteWebDriver.Navigate().GoToUrl(address);
+			RemoteWebDriver.Navigate().GoToUrl(address);
 		}
 
 		public void Focus(IWebElement webElement)
