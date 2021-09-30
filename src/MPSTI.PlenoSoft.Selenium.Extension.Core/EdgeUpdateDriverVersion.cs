@@ -13,10 +13,10 @@
 		protected override string XmlKey => "Name";
 		protected override string GetBaseURL(string versao) => BaseURL + $"?comp=list&maxresults=500&prefix={versao}";
 
-		public static string Update()
+		public static string Update(string programFiles = "Program Files (x86)")
 		{
 			SeleniumFactory.BrowserType = BrowserType.Edge;
-			return new EdgeUpdateDriverVersion().Start();
+			return new EdgeUpdateDriverVersion().Start(programFiles);
 		}
 	}
 }

@@ -23,10 +23,10 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 
 		protected BrowserUpdateDriverVersion() { }
 
-		protected string Start()
+		protected string Start(string programFiles)
 		{
 			var driverFile = SeleniumFactory.GetWebDriverLocation(null, DriverFileName);
-			var browserFile = GetBrowserFile("Program Files");
+			var browserFile = GetBrowserFile(programFiles);
 			if (browserFile?.Exists ?? false)
 			{
 				var browserVersion = GetBrowserVersion(browserFile);
@@ -41,7 +41,7 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 					if ((driverFile != null) && (driverFile.Directory.FullName != webDriverLocation.Directory.FullName))
 						webDriverLocation.CopyTo(driverFile.FullName, true);
 
-					return Start();
+					return Start(programFiles);
 				}
 				else
 					return $"Atualizado! \r\n {DriverName}BrowserVersion: {browserVersion} \r\n {DriverName}DriverVersion: {driverVersion} ";
