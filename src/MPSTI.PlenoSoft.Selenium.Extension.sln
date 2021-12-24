@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSTI.PlenoSoft.Selenium.Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MPSTI.PlenoSoft.Selenium.Extension.Core", "MPSTI.PlenoSoft.Selenium.Extension.Core\MPSTI.PlenoSoft.Selenium.Extension.Core.csproj", "{95FACAC2-FCEA-4B7F-96D8-499684A167F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSTI.PlenoSoft.Selenium.Extension.Test", "MPSTI.PlenoSoft.Selenium.Extension.Test\MPSTI.PlenoSoft.Selenium.Extension.Test.csproj", "{CCDFB99F-7460-481C-B6C3-13B3D57F4560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{95FACAC2-FCEA-4B7F-96D8-499684A167F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95FACAC2-FCEA-4B7F-96D8-499684A167F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95FACAC2-FCEA-4B7F-96D8-499684A167F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDFB99F-7460-481C-B6C3-13B3D57F4560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDFB99F-7460-481C-B6C3-13B3D57F4560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDFB99F-7460-481C-B6C3-13B3D57F4560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDFB99F-7460-481C-B6C3-13B3D57F4560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
