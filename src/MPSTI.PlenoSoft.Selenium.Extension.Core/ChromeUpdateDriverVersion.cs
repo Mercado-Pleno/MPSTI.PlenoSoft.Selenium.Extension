@@ -13,7 +13,7 @@
 		protected override string XmlKey => "Key";
 		protected override string GetBaseURL(string versao) => BaseURL;
 
-		public static string Update(string programFiles = "Program Files (x86)")
+		public static string Update(string programFiles = "Program Files")
 		{
 			SeleniumFactory.BrowserType = BrowserType.Chrome;
 			return new ChromeUpdateDriverVersion().Start(programFiles);

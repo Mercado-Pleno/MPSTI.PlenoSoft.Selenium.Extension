@@ -135,7 +135,9 @@ namespace MPSTI.PlenoSoft.Selenium.Extension
 			process.Start();
 			var driverVersion = process.StandardOutput.ReadToEnd() + " ";
 			process.Close();
-			return driverVersion.Split(' ')[1];
+			var versions = driverVersion.Split(' ');
+			var version = versions.FirstOrDefault(v => char.IsDigit(v[0]));
+			return version;
 		}
 
 		private FileInfo GetBrowserFile(string programFiles)
